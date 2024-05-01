@@ -1,0 +1,116 @@
+Mudanzas es el unico que tiene conocimiento de las estructuras y las clases. Las estructuras deben guardar Object!!!
+Siempre revisar que no este la clave y despues preguntar por los otros datos.
+una clase propia para toda la comunicacion con el usuario.
+el archivo de log es un historial de cambios en el programa.
+como se hace con el numero de pasaporte?
+como funciona la clase E/S
+deberia usar logger o fileWriter? o ambas?
+claveCliente?
+porque StringTokenizer y no String.split
+hago trim en lineaSeparada?
+cuando uso hashMap.put, deberia imprimir si pudo introducir el dato?
+put siempre introduce?
+listarCiudadPorPrefijo se puede hacer en el TDA?
+cualquier prefijo?
+eliminarAdy se llama dos veces? o deberia llamarlo adentro del while de la primera eliminacion
+sc.next hace un trim automatico?
+el grafo almacena las claves como vertices o los objectos Ciudad?
+integer.parseInt o integer.valueOf?
+tener un insertarVerticeSinVerificacion para insertar ciudades, ya que ya hice la verificacion afuera?
+cambiar etiqueta a double. en Nodo o en Grafo?
+Hash_Map.containsKey(key_element)
+clase claveCompuesta para solicitud
+el hashMap de solicitud guarda una lista de solicitudes bajo la claveCompuesta
+cambiar el mayorMenor a recursivo para verificar balance. done
+
+
+cosas para hcer post 7/2
+terminar los logger
+ver como solucionar lo de solicitud
+hacer los metodos de camino y listar de Grafo
+cuando elimina un cliente deberia eliminar las solicitudes?
+cuando se elimina una ciudad. elimina las solicitudes?
+revisar preguntarCodigoPostal
+seguir solicitudes
+deberia preguntar si existe el cliente antes de agreag
+hacer una primera verificacion de si son adyacentes directos origen y destino?
+
+
+
+
+Mudanzas:
+-DiccionarioCiudades (Arbol AVL)
+-DiccionarioClientes (Hash/HashMap)
+-Mapa de rutas(grafo etiquetado)
+-colSolicitudes(Hash)
+
+
+
+Cliente:
+-claveCliente {String tipoDocu y int Numero}
+-nombre
+-apellido
+-telefono
+-email
+
+Ciudad:
+-codigoPostal (Comparable)
+-nombre
+-provincia
+
+Solicitud:
+-origen
+-destino
+-fechaSolicitud
+-claveCliente
+-cantidadMetros
+-cantidadBultos
+-domRetiro
+-domEntrega
+-estaPago
+
+Ruta:
+distanciaKm
+
+ChatGPT:
+necesito que me ayudes a crear datos para una base de datos. el Formato es el siguiente: P;(TipoDocumento);(NroDocumento);Apellido;Nombres;Telefono
+los puntos y coma son necesarios para separar cada tipo de dato, Solo hay dos tipos de documentos posibles, DNI o PAS. Los nombres y los apellidos elegilos basandote en la region argentina. Aca tenes dos ejemplos: P;DNI;35678965;FERNANDEZ;JUAN CARLOS;2994495117 y
+P;PAS;21923847;MARTINEZ;GRACIELA;3514348260
+
+codigos Postales:
+
+8328
+3300
+1824
+8000
+5730
+8316
+5881
+2000
+8324
+1907
+8300
+5600
+8370
+4700
+3113
+8332
+3616
+5194
+5300
+9410
+6500
+2840
+8400
+9103
+3302
+2820
+8500
+3500
+5000
+1887
+3100
+9201
+8322
+
+
